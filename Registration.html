@@ -25,7 +25,8 @@
                     <li><a href="index.html#home">Home</a></li> 
                     <li><a href="index.html#aboutUs">About</a></li>
                     <li><a href="#">Facilities</a></li>
-                    <li><a href="#">Contact</a></li>  
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Fee Payment</a></li>  
                 </ul>     
             </div>              
         </nav>
@@ -38,48 +39,97 @@
                 <div class="modal-dialog modal-m">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 style="font-size: 20px;padding-top: 2%;">REGISTRATION</h1>
+                            <h1 style="font-size: 30px;padding-top: 2%;">REGISTRATION</h1>
                         </div>
-                   <div class="modal-body">
-                        <div class="first-column" id="registrationform" style="padding-left: 0; float: left; width:90%;">
+                        <div class="modal-body">
+                            <h4 style="margin-top: 0;margin-bottom: 2%; margin-left: 4%;margin-top: 1%;">RESIDENT INFORMATION</h4>
+                            <div class="first-column" id="registrationform" style="padding-left: 0; float: left; width:42%;">
                             
-                            <div class="form-group" id="form1">
-                               <div style=" float: left;margin: 0 40px;">
-                                <label for="name">NAME</label>
-                                <input type="text" class="form-control" id="name" name="name" style="height: 25px; width:100%; ">
+                                <div class="form-group" id="form1">
+                                    <div style=" float: left;margin: 0 45px;">
+                                        <label for="name">NAME</label>
+                                        <input type="text" class="form-control" id="name" name="name" style="height: 25px; width:110%; ">
+                                    </div>
+                                    <div style="float: left;">
+                                        <label for="dob">DATE OF BIRTH</label>
+                                        <input type="date" class="form-control" id="dob" name="date" style="height: 25px; width: 110%;">
+                                    </div>                               
                                 </div>
-                                <div style="float: left;">
-                                <label for="dob">DATE OF BIRTH in dd/mm/yy</label>
-                                <input type="date" class="form-control" id="dob" name="date" style="height: 25px; width: 100%;">
-                               </div>                               
+
+
+                                <div class="form-group" id="form1">
+                                    <div style=" float: left;margin: 0 45px;margin-bottom: 5%;">
+                                        <label for="address">ADDRESS</label>
+                                        <input type="text" class="form-control" id="address" name="address" style="height: 15vh; width:110%;">
+                                    </div>
+                                    <div style="float: left;margin-bottom: 5%;">
+                                        <label for="dob">MEDICAL INFORMATION:</label>
+                                        <input type="text" class="form-control" placeholder="Allergies if any" id="dob" name="date" style="height: 15vh; width: 110%;">
+                                    </div>                              
+                                </div>
+
+
+                                <div class="form-group" id="form1">
+                                    <div style=" float: left;margin: 0 45px;">
+                                        <label for="contact">CONTACT NUMBER</label>
+                                        <input type="tel" class="form-control" id="contact" name="contact" style="height: 25px; width:110%; ">
+                                    </div>
+                                    <div style="float: left;">
+                                        <label for="dob">DURATION OF STAY</label>
+                                        <input type="text" class="form-control" id="duration" name="duration" style="height: 25px; width: 110%;">
+                                    </div>                               
+                                </div>
+                            </div>
+                            
+                            <div class="second-column">
+                                <div class="vl"></div>
                             </div>
 
+                            <div class="third-column" id="registrationform" style="padding-left: 0; float: left; width:42%;">
 
-                            <div class="form-group" id="form1">
-                                <div style=" float: left;margin: 0 40px;margin-bottom: 5%;">
-                                 <label for="address">ADDRESS</label>
-                                 <input type="text" class="form-control" id="address" name="address" style="height: 15vh; width:100%;">
-                                 </div>
-                                 <div style="float: left;margin-bottom: 5%;">
-                                 <label for="dob">MEDICAL INFORMATION:</label>
-                                 <input type="text" class="form-control" placeholder="Allergies if any" id="dob" name="date" style="height: 15vh; width: 100%;">
-                                </div>                              
+                                <h4 style="margin-top: 0;margin-bottom: 5%; margin-left: 9%;margin-top: -9%;">GUARDIAN INFORMATION</h4>
+
+                            
+                                <div class="form-group" id="form1">
+                                    <div style=" float: left;margin: 0 45px;">
+                                        <label for="gname">NAME</label>
+                                        <input type="text" class="form-control" id="gname" name="gname" style="height: 25px; width:110%; ">
+                                    </div>
+                                    <div style="float: left;">
+                                        <label for="relation">RELATION</label>
+                                        <input type="text" class="form-control" id="relation" name="reltion" style="height: 25px; width: 110%;">
+                                    </div>                               
+                                </div>
+
+
+                                <div class="form-group" id="form1">
+                                    <div style=" float: left;margin: 0 45px;margin-bottom: 5%;">
+                                        <label for="occupation">OCCUPATION</label>
+                                        <input type="text" class="form-control" id="occupation" name="occupation" style="height: 25px; width:110%;">
+                                    </div>
+                                    <div style="float: left;margin-bottom: 5%;">
+                                        <label for="gcontact">CONTACT NUMBER</label>
+                                        <input type="tel" class="form-control" id="dob" name="gcontact" style="height: 25px; width: 110%;">
+                                    </div>                              
+                                </div>
+
+
+                                <div class="form-group" id="form1">
+                                    <div style=" float: left;margin: 0 45px;">
+                                        <label for="gaddress">ADDRESS</label>
+                                        <input type="text" class="form-control" id="gaddress" name="gaddress" style="height: 15vh; width:110%; ">
+                                    </div>
+                                    <div style="float: left;">
+                                        <label for="email">EMAIL</label>
+                                        <input type="email" class="form-control" id="email" name="email" style="height: 25px; width: 110%;">
+                                    </div>                               
+                                </div>
+
                             </div>
 
-
-                            <div class="form-group" id="form1">
-                                <div style=" float: left;margin: 0 40px;">
-                                 <label for="name">NAME</label>
-                                 <input type="text" class="form-control" id="name" name="name" style="height: 25px; width:100%; margin-right: 0; ">
-                                 </div>
-                                 <div style="float: left;">
-                                 <label for="dob">DATE OF BIRTH in dd/mm/yy</label>
-                                 <input type="date" class="form-control" id="dob" name="date" style="height: 25px; width: 100%;">
-                                </div>                               
-                            </div>
+                            <button type="button" name="registeration" class="registerbtn"><strong>REGISTER</strong></button>
 
                         </div>
-                        
                    </div>
 
                 </div>   

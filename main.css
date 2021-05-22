@@ -177,22 +177,22 @@ nav a{
 
 .aboutUs{
     padding-left: 5%;
-    height:90vh;
+    height:85vh;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 
 #reviewfee{
     margin-top: 3%;
     margin-left: 0;
-    padding-left: 0; 
+    padding-left: 0;
 }
 
 #review{
     float: left;
     width:25%;
-    padding-left: 0;
+    padding-left:0;
     margin-right: 3%;
+    padding-right: 0;
 }
 
 .abouttext{
@@ -202,38 +202,88 @@ nav a{
 .modal-content { 
     background:rgba(0, 0, 0, 0.6); 
     margin-top: 3%;
-    height: 65vh;
+    height: 70vh;
     color: white;
     width: 100%;
     padding-bottom: 0;
     margin-bottom: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 3.2%;
 }
 
 .modal-dialog{
     margin-top: 7%;
-    width: 90%;   
+    width: 89%; 
+    padding-right: 0;
     
 }
 
 .modal-header{
-    margin-left: 3%;
+    margin-left: 4%;
     margin-right: 2%;
-    margin-top: 0;
+    margin-top: -2%;
     padding-top: 0;
     height: 18%;
 }
 
 #form1{
-    width: 50%;
+    width: fit-content;
     margin-left:0px;
     margin-bottom: 1%;
     height: 10vh;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .vl {
-    border-left: 6px solid green;
-    height: 80px;
+    border-left: 1px solid white;
+    height: 43vh;
+    float: left;
+    margin-left: 4%;
+    margin-right: 1%;
   }
+
+  .modal-body{
+      padding-right: 0;
+  }
+
+  .registerbtn{
+      float:right;
+      margin-top: 25%;
+      margin-right: 3%;
+      width:7%;
+      background-color: #1F89C6;
+  }
+
+  footer{
+      margin-top: 10%;
+      background-color: #142B40;
+      color: white;
+      height:30vh;
+      padding-top: 3%;
+      padding-left: 0%;
+  }
+
+  #footlogo
+  {
+      float: right;
+      height: 10vh;
+      width: 10%;
+      margin-right: 4%;
+      margin-top:-1%;
+  }
+
+  .footercontent1{
+
+    padding-left: 5%;
+
+  }
+
+  .footercontent2{
+    padding-left: 5%;
+  }
+
+
 
 
 
