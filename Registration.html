@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Registration</title>
+    <script>
+        $(document).ready(function(){
+            $("#myModal1").modal('show');
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <img src="2ndHomeSVG.svg" alt="logo" class = "logo" height="60">
+        <nav class="navbar navbar-custom">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html#home">Home</a></li> 
+                    <li><a href="index.html#aboutUs">About</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Contact</a></li>  
+                </ul>     
+            </div>              
+        </nav>
+    </header> 
+
+    <div class="home">
+        <br>
+        <div class="modal-fade" id="mymodel1" role="dialog">
+            <div>
+                <div class="modal-dialog modal-m">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 style="font-size: 20px;padding-top: 2%;">REGISTRATION</h1>
+                        </div>
+                   <div class="modal-body">
+                        <div class="first-column" id="registrationform" style="padding-left: 0; float: left; width:90%;">
+                            
+                            <div class="form-group" id="form1">
+                               <div style=" float: left;margin: 0 40px;">
+                                <label for="name">NAME</label>
+                                <input type="text" class="form-control" id="name" name="name" style="height: 25px; width:100%; ">
+                                </div>
+                                <div style="float: left;">
+                                <label for="dob">DATE OF BIRTH in dd/mm/yy</label>
+                                <input type="date" class="form-control" id="dob" name="date" style="height: 25px; width: 100%;">
+                               </div>                               
+                            </div>
+
+
+                            <div class="form-group" id="form1">
+                                <div style=" float: left;margin: 0 40px;margin-bottom: 5%;">
+                                 <label for="address">ADDRESS</label>
+                                 <input type="text" class="form-control" id="address" name="address" style="height: 15vh; width:100%;">
+                                 </div>
+                                 <div style="float: left;margin-bottom: 5%;">
+                                 <label for="dob">MEDICAL INFORMATION:</label>
+                                 <input type="text" class="form-control" placeholder="Allergies if any" id="dob" name="date" style="height: 15vh; width: 100%;">
+                                </div>                              
+                            </div>
+
+
+                            <div class="form-group" id="form1">
+                                <div style=" float: left;margin: 0 40px;">
+                                 <label for="name">NAME</label>
+                                 <input type="text" class="form-control" id="name" name="name" style="height: 25px; width:100%; margin-right: 0; ">
+                                 </div>
+                                 <div style="float: left;">
+                                 <label for="dob">DATE OF BIRTH in dd/mm/yy</label>
+                                 <input type="date" class="form-control" id="dob" name="date" style="height: 25px; width: 100%;">
+                                </div>                               
+                            </div>
+
+                        </div>
+                        
+                   </div>
+
+                </div>   
+            </div>
+        </div>            
+    </div>
+</body>
+</html> 
