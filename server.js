@@ -13,7 +13,7 @@ const limiter = rateLimit({
   max: 100 // limit each IP to 100 requests per windowMs
 });
 
-var db = new sqlite3.Database('info.db');
+var db = new sqlite3.Database('Resident.db');
 
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
@@ -21,16 +21,16 @@ app.use(express.static(path.join(__dirname)));
 app.use(helmet());
 app.use(limiter);
 
-db.run('CREATE TABLE IF NOT EXISTS studentinfo(Name TEXT,Dob TEXT,Address TEXT,MedInfo TEXT,Contact TEXT,Duration INTEGER, GuardianName TEXT, Relation TEXT,Occupation TEXT,GuardianContact TEXT,GuardianAddress TEXT,GuardianEmail TEXT)');
+db.run('CREATE TABLE IF NOT EXISTS ResidentInfo(Name TEXT,Dob TEXT,Address TEXT,MedInfo TEXT,Contact TEXT,Duration INTEGER, GuardianName TEXT, Relation TEXT,Occupation TEXT,GuardianContact TEXT,GuardianAddress TEXT,GuardianEmail TEXT)');
 
 app.get('/', function(req,res){
-  res.sendFile(path.join(__dirname,'/Registration.html'));
+  res.sendFile(path.join(__dirname,'/index.html'));
 });
 
 // Insert
 app.post('/add', function(req,res){
   db.serialize(()=>{
-    db.run('INSERT INTO studentinfo VALUES ("'+req.body.Name+'","'+req.body.Dob+'","'+req.body.Address+'","'+req.body.MedInfo+'","'+req.body.Contact+'","'+req.body.Duration+'","'+req.body.GuardianName+'","'+req.body.Relation+'","'+req.body.Occupation+'","'+req.body.GuardianContact+'","'+req.body.GuardianAddress+'","'+req.body.GuardianEmail+'")', function(err) {
+    db.run('INSERT INTO ResidentInfo VALUES ("'+req.body.Name+'","'+req.body.Dob+'","'+req.body.Address+'","'+req.body.MedInfo+'","'+req.body.Contact+'","'+req.body.Duration+'","'+req.body.GuardianName+'","'+req.body.Relation+'","'+req.body.Occupation+'","'+req.body.GuardianContact+'","'+req.body.GuardianAddress+'","'+req.body.GuardianEmail+'")', function(err) {
       if (err) {
         return console.log(err.message);
       }
