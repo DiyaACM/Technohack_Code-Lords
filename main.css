@@ -80,7 +80,7 @@ nav a{
 }
 
 .home{
-    background-image: url(HOSTELPIC.jpg);
+    background-image: url(images/HOSTELPIC.jpg);
     background-size:cover;
     margin: 0;
     padding-top: 0;
@@ -137,7 +137,7 @@ nav a{
 #card2{
    
     padding-top: 25% ;
-    background-image: url(hostel.jpeg);
+    background-image: url(images/hostel.jpeg);
     width: 35%;
     margin: 0px;
     float: right;
@@ -164,7 +164,7 @@ nav a{
     width: 110%;
     margin-top: -5%;
     float: left;
-    background-image: url("hostel.jpeg");
+    background-image: url("images/hostel.jpeg");
     margin-right:0%;
     margin-left: -10%;
     z-index: 1;
