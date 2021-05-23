@@ -261,6 +261,7 @@ nav a{
       margin-top:12%;
     height:100%;
     overflow:hidden; /*to prevent overlapping*/
+    background-color: #1F89C6;
 }
 
 .facility_img img{
@@ -321,6 +322,17 @@ nav a{
     padding-left: 5%;
   }
 
+#adminlogin{
+    width: 340px;
+    height:60vh;
+    margin-top: 10%;
+    margin-bottom: 15px;
+    background-color:black;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+}
 
 
 
