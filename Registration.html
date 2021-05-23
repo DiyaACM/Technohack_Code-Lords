@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="client.js"></script>
     <title>Registration</title>
     <script>
         $(document).ready(function(){
@@ -24,8 +25,8 @@
                 <ul class="nav navbar-nav">
                     <li><a href="index.html#home">Home</a></li> 
                     <li><a href="index.html#aboutUs">About</a></li>
-                    <li><a href="#">Facilities</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html#facilities">Facilities</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                     <li><a href="#">Fee Payment</a></li>  
                 </ul>     
             </div>              
@@ -64,7 +65,7 @@
                                     </div>
                                     <div style="float: left;margin-bottom: 5%;">
                                         <label for="dob">MEDICAL INFORMATION:</label>
-                                        <input type="text" class="form-control" placeholder="Allergies if any" id="dob" name="date" style="height: 15vh; width: 110%;">
+                                        <input type="text" class="form-control" placeholder="Allergies if any" id="medinfo" name="date" style="height: 15vh; width: 110%;">
                                     </div>                              
                                 </div>
 
@@ -109,7 +110,7 @@
                                     </div>
                                     <div style="float: left;margin-bottom: 5%;">
                                         <label for="gcontact">CONTACT NUMBER</label>
-                                        <input type="tel" class="form-control" id="dob" name="gcontact" style="height: 25px; width: 110%;">
+                                        <input type="tel" class="form-control" id="gcontact" name="gcontact" style="height: 25px; width: 110%;">
                                     </div>                              
                                 </div>
 
@@ -127,7 +128,7 @@
 
                             </div>
 
-                            <button type="button" name="registeration" class="registerbtn"><strong>REGISTER</strong></button>
+                            <button type="button" name="registeration" class="registerbtn" onclick="enterdetails();location.href='after_regn.html'"><strong>REGISTER</strong></button>
 
                         </div>
                    </div>
